@@ -24,7 +24,7 @@ entry.place(x=55,y=120)
 def play():
 	try:
 		tex.delete("1.0",END)
-		playlist = pafy.get_playlist(url) 
+		playlist = pafy.get_playlist(entry.get()) 
 		items = playlist["items"] 
 		path=filedialog.askdirectory()
 		for i in range (0,9999999999999999999999999):
